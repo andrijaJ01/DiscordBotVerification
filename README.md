@@ -20,4 +20,14 @@ Edit:
 ```
 src/main.cpp
 ```
+and edit following:
 
+```
+dpp::cluster bot("MTA3MTAyMTUxMTA0NzEzOTM5OA.GXCEx6.8hzlMnzXAt-wJCIijxShOPU3AkJl8ErIV0Yq2c");//TOKEN FOR BOT FROM DISCORD DEVELOPER PORTAL.Line 11
+```
+
+and 
+
+```
+  thistrole.guild_id = 1044859463494008862;
+```
