@@ -1,0 +1,4 @@
+# ninja log v5
+2	2065	1675596801441922636	libs/DPP/library/CMakeFiles/dpp.dir/cmake_pch.hxx.gch	dfb60aa0338bc963
+2066	3734	1675596803101922660	libs/DPP/library/CMakeFiles/dpp.dir/__/src/dpp/ban.cpp.o	99238b58395f6e54
+2066	3944	1675596803308589328	libs/DPP/library/CMakeFiles/dpp.dir/__/src/dpp/cache.cpp.o	78ca5c151b52000d

@@ -1,0 +1,34 @@
+Performing C++ SOURCE FILE Test HAVE_SINGLE_PARAMETER_SETNAME_NP failed with the following output:
+Change Dir: /home/andrija/Documents/DiscordBot-OP12/build/CMakeFiles/CMakeScratch/TryCompile-rvBfeV
+
+Run Build Command(s):/usr/bin/ninja cmTC_0d3d8 && [1/2] Building CXX object CMakeFiles/cmTC_0d3d8.dir/src.cxx.o
+FAILED: CMakeFiles/cmTC_0d3d8.dir/src.cxx.o 
+/usr/bin/c++ -DHAVE_SINGLE_PARAMETER_SETNAME_NP   -o CMakeFiles/cmTC_0d3d8.dir/src.cxx.o -c /home/andrija/Documents/DiscordBot-OP12/build/CMakeFiles/CMakeScratch/TryCompile-rvBfeV/src.cxx
+/home/andrija/Documents/DiscordBot-OP12/build/CMakeFiles/CMakeScratch/TryCompile-rvBfeV/src.cxx: In function ‘int main()’:
+/home/andrija/Documents/DiscordBot-OP12/build/CMakeFiles/CMakeScratch/TryCompile-rvBfeV/src.cxx:4:36: error: invalid conversion from ‘const char*’ to ‘pthread_t’ {aka ‘long unsigned int’} [-fpermissive]
+    4 |                 pthread_setname_np("ThreadName");
+      |                                    ^~~~~~~~~~~~
+      |                                    |
+      |                                    const char*
+/home/andrija/Documents/DiscordBot-OP12/build/CMakeFiles/CMakeScratch/TryCompile-rvBfeV/src.cxx:4:35: error: too few arguments to function ‘int pthread_setname_np(pthread_t, const char*)’
+    4 |                 pthread_setname_np("ThreadName");
+      |                 ~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~
+In file included from /usr/include/c++/12.2.1/x86_64-pc-linux-gnu/bits/gthr-default.h:35,
+                 from /usr/include/c++/12.2.1/x86_64-pc-linux-gnu/bits/gthr.h:148,
+                 from /usr/include/c++/12.2.1/bits/std_thread.h:46,
+                 from /usr/include/c++/12.2.1/thread:43,
+                 from /home/andrija/Documents/DiscordBot-OP12/build/CMakeFiles/CMakeScratch/TryCompile-rvBfeV/src.cxx:2:
+/usr/include/pthread.h:463:12: note: declared here
+  463 | extern int pthread_setname_np (pthread_t __target_thread, const char *__name)
+      |            ^~~~~~~~~~~~~~~~~~
+ninja: build stopped: subcommand failed.
+
+
+Source file was:
+
+	#include <thread>
+	int main() {
+		pthread_setname_np("ThreadName");
+		return 0;
+	}
+
