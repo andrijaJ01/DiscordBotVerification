@@ -29,5 +29,5 @@ dpp::cluster bot("MTA3MTAyMTUxMTA0NzEzOTM5OA.GXCEx6.8hzlMnzXAt-wJCIijxShOPU3AkJl
 and 
 
 ```
-  thistrole.guild_id = 1044859463494008862;
+  thistrole.guild_id = 1044859463494008862; //line 28
 ```
